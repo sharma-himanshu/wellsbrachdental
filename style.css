@@ -133,3 +133,112 @@ footer {
   background: #eee;
   margin-top: 60px;
 }
+
+/* ============================
+   MOBILE & TABLET RESPONSIVE
+   ============================ */
+
+@media (max-width: 900px) {
+  /* Header */
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 8px 12px;
+  }
+
+  /* Hero */
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 60px 24px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    margin-top: 30px;
+    border-radius: 20px;
+  }
+
+  /* About */
+  .about-preview {
+    grid-template-columns: 1fr;
+    padding: 60px 24px;
+    text-align: center;
+  }
+
+  .about-preview img {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  /* Trust strip */
+  .trust-strip {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 500px) {
+  .brand {
+    font-size: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .primary-btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .service-card {
+    padding: 28px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+
+.mobile-call {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-call {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--coral);
+    color: white;
+    padding: 14px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 100;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  }
+}
